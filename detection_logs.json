@@ -1,0 +1,42 @@
+[
+    {
+        "time": "19:49:03",
+        "event": "Threat Removed",
+        "details": "PID: 5272 stopped"
+    },
+    {
+        "time": "19:49:03",
+        "event": "Threat Removed",
+        "details": "PID: 1368 stopped"
+    },
+    {
+        "time": "19:48:33",
+        "event": "Threat Detected",
+        "details": "py.exe (PID: 5272)"
+    },
+    {
+        "time": "19:48:33",
+        "event": "Threat Detected",
+        "details": "python.exe (PID: 1368)"
+    },
+    {
+        "time": "19:47:43",
+        "event": "Threat Removed",
+        "details": "PID: 2396 stopped"
+    },
+    {
+        "time": "19:46:34",
+        "event": "Threat Detected",
+        "details": "bash.exe (PID: 2396)"
+    },
+    {
+        "time": "19:42:10",
+        "event": "Threat Removed",
+        "details": "PID: 16584 stopped"
+    },
+    {
+        "time": "19:41:47",
+        "event": "Threat Detected",
+        "details": "python.exe (PID: 16584)"
+    }
+]

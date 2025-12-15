@@ -1,0 +1,28 @@
+KEYLOGGER DETECTION SYSTEM - QUICK START GUIDE
+==============================================
+
+1. INSTALL DEPENDENCIES
+   Open a terminal in this folder and run:
+   pip install -r requirements.txt
+
+2. START THE SERVER (DASHBOARD)
+   Run the following command to start the detection server:
+   python server.py
+
+   > Access the dashboard at: http://127.0.0.1:5000
+
+3. TEST DETECTION (Simulate Threats)
+   Open a NEW terminal window for each threat.
+
+   A) Python Keylogger:
+      python keylogger.py
+      > Press ESC to stop it manually.
+
+   B) Bash Keylogger (requires Git Bash or similar on Windows):
+      bash keylogger.sh
+      > Press Ctrl+C to stop it manually.
+
+4. STOPPING THE PROJECT
+   To stop the server, press Ctrl+C in the server terminal.
+   To kill all processes at once, you can run:
+   taskkill /F /IM python.exe /IM bash.exe

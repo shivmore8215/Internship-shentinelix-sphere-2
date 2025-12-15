@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Sentinel | Threat Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>SENTINEL</span>
+            </div>
+            <nav>
+                <a href="#" id="nav-dashboard" class="active">
+                    <i class="fas fa-chart-line"></i> Dashboard
+                </a>
+                <a href="#" id="nav-logs">
+                    <i class="fas fa-history"></i> Logs
+                </a>
+            </nav>
+            <div class="version">v1.2.0</div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header>
+                <h1 id="page-title">System Overview</h1>
+                <div class="user-profile">
+                    <span>Admin</span>
+                    <div class="avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard View -->
+            <div id="view-dashboard">
+                <div class="status-card" id="status-card">
+                    <div class="status-icon">
+                        <i class="fas fa-check-circle" id="status-icon-i"></i>
+                    </div>
+                    <div class="status-text">
+                        <h2 id="system-status">System Secure</h2>
+                        <p id="status-desc">No active threats detected on your system.</p>
+                    </div>
+                    <div class="scan-info">
+                        Last Scan: <span id="last-scan">--:--</span>
+                    </div>
+                </div>
+
+                <h3 class="section-title">Active Threats</h3>
+                <div class="threat-grid" id="threat-list">
+                    <!-- Threats will be injected here -->
+                    <div class="no-threats-placeholder" id="no-threats">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>No threats currently active</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logs View -->
+            <div id="view-logs" class="hidden">
+                <div class="card">
+                    <h3>Detection History</h3>
+                    <table class="log-table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Event</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody id="log-table-body">
+                            <!-- Logs injected here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}?v=7"></script>
+</body>
+</html>
